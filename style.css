@@ -26,8 +26,8 @@ body {
 
 #credit {
     position: relative;
-    top: 95%;
-    height: 2%;
+    top: calc(100% - 5rem);
+    height: 1rem;
     text-align: center;
     color: aliceblue;
     font-weight: bold;
@@ -53,6 +53,40 @@ form {
     box-sizing: border-box;
     background-color: #A4A4A4;
     box-shadow: 10px 5px 5px #1C1C1C ;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+}
+
+label {
+    color: #1C1C1C;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    border: 3px solid grey;
+    border-radius: 4px;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: 3px solid #259388;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 button {
