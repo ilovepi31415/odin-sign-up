@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0;
+}
+
+#image-side {
+    flex: 2 1 40%;
+    max-width: 70vh;
+    background: url(building-background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#form-side {
+    display: flex;
+    flex-direction: column;
+    flex: 3 0 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.header {
+    flex-grow: 4;
+    font-size: 1rem;
+    background-color: red;
+    width: 80%;
+}
+
+form {
+    flex-grow: 3;
+    width: 80%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #A4A4A4;
+    box-shadow: #1C1C1C 10px 5px;
+}
+
+button {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #AA4586;
+    font-weight: 1000;
+    font-size: 1rem;
+    text-align: center;
+    color: aliceblue;
+    border: none;
+    transition: background-color .1s ease-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #BA5596;
+}
