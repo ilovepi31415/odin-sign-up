@@ -24,8 +24,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20%;
-    margin-top: 70%;
+    margin-top: 30vh;
     text-align: center;
     font-size: 3rem;
     background-color: #1C1C1CAA;
@@ -46,7 +47,7 @@ body {
     font-weight: bold;
 }
 
-a {
+a.credit {
     color: aliceblue;
 }
 
@@ -69,7 +70,7 @@ form {
     padding: 1rem;
     box-sizing: border-box;
     background-color: #A4A4A4;
-    box-shadow: 10px 5px 5px #1C1C1C ;
+    box-shadow: 0px 5px 5px #1C1C1C ;
 }
 
 #input-container {
@@ -122,10 +123,23 @@ button {
     text-align: center;
     color: aliceblue;
     border: none;
-    transition: background-color .1s ease-out;
+    box-shadow: 0 0;
+    transition: background-color .1s ease-out, box-shadow .15s ease-out;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #003D3C;
+    background-color: #19524E;
+    box-shadow: 3px 5px 3px #1C1C1C;
+}
+
+p#login {
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+a#login-link {
+    text-decoration: none;
+    color: #237976;
+    font-weight: 800;
 }
