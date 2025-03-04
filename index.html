@@ -22,30 +22,30 @@
             <div class="container" id="input-container">
                 <div class="input-item">
                     <label for="first-name">First Name</label>
-                    <input type="text" name="first-name">
+                    <input type="text" name="first-name" minlength="2" maxlength="20" required>
                 </div>
                 <div class="input-item">
                     <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name"></div>
+                    <input type="text" name="last-name" minlength="2" maxlength="20" required></div>
                 <div class="input-item">
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                 </div>
                 <div class="input-item">
                     <label for="number">Phone Number</label>
-                    <input type="number" name="number">
+                    <input type="text" name="number" pattern="((\d{3})?\d{7})" required>
                 </div>
                 <div class="input-item">
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" minlength="8" maxlength="20" required>
                 </div>
                 <div class="input-item">
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" name="confirm">
+                    <input type="password" name="confirm" minlength="8" maxlength="20" required>
                 </div>
             </div>
         </form>
-        <button id="create-button">
+        <button id="create-button" type="submit">
             Create My Account
         </button>
         <p id="login"></p>
